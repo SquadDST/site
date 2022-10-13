@@ -1,0 +1,17 @@
+/* Corpo do site */
+body{
+    /* Margem */
+    margin: 0; 
+    /* Margem interna */
+    padding: 0;
+    /* Largura */
+    width: 100%;
+    /* Altura */
+    height: 100vh;
+    /* Tamanho do fundo */
+    background-size: cover;
+    /* Tipo de caixa */
+    display: table;
+}
+ 
+

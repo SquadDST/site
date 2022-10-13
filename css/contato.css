@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Plus+Jakarta+Sans:wght@700&display=swap');
+
+body{
+    /* Margem */
+    margin: 0; 
+    /* Margem interna */
+    padding: 0;
+    /* Largura */
+    width: 100%;
+    background: rgb(226,218,103);
+    background: linear-gradient(140deg, rgba(226,218,103,1) 0%, rgba(184,52,101,1) 27%, rgba(70,24,82,1) 47%, rgba(8,6,71,1) 100%);
+}
+.content{
+    background-color: #fff;
+    width: 600px;
+    padding: 20px;
+    margin-left: 1250px;
+    border-radius: 8px;
+    margin-top: 83px;
+    margin-bottom: 60px;
+    margin-right:  60px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.row{
+    padding: 5px;
+}
+
+.button{
+    text-align: center;
+}
+
+fieldset{
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px; 
+    border-color: #c2cbce;
+    box-shadow: 2px 2px 2px #c2cbce;
+}
+
+legend{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+label:not(
+    [for="masculino"],
+    [for="feminino"]
+){
+    display: inline;
+    width: 120px;
+}
+
+label{
+    padding: 5px;
+}
+
+input[type="submit"]{
+    padding: 5px 10px;
+    background-color: #8d25c3;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.2);
+    background-color: #c658ff;
+}
+
+input{
+    padding: 2px;
+    outline: none;   
+}
+
+input[id="nome"],
+input[id="sobrenome"],
+input[id="email"],
+input[id="logradouro"]{
+    width: 300px;
+}
+input[id="data"]{
+    width: 180px;
+}
+input[id="cep"],
+input[id="bairro"]{
+    width: 130px;
+}
+input[id="uf"]{
+    width: 30px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"]{
+    border: none;
+    border-bottom: 2px solid #c2cbce;
+    transition: 0.5s all ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus{
+    color: #c658ff;
+    font-weight: 300;
+    border-color: #c658ff;
+}
+
+textarea{
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    resize: none;
+}
+
+.curso{
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 1200px;
+    padding: 5px;
+    font-size: 2em;
+    color: #fff;
+    float: left;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+p{
+    padding: 5px;
+}
+

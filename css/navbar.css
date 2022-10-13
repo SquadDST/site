@@ -1,0 +1,76 @@
+/* Alinhar no centro o navbar */
+nav{
+    text-align: center;
+}
+
+.menu{
+    /* Margem de cima */
+    margin-top: 26px;
+    display: inline-block;
+    /* Cor de fundo */
+    background-color: black;
+    margin: 10px auto;
+    width: 160px;
+    height: 45px;  
+    /* Margem interna de cima */
+    padding-top: 20px;
+    color: antiquewhite;
+    /* Letra de forma */
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    /* Largura da letra */
+    font-weight: lighter;
+    /* Tamanho da letra */
+    font-size: 21px;
+    /* Transicão de entrada */
+    transition: 1s;     
+}
+/* Ação que sera feita quando passar o mouse por cima */
+li:hover{
+    transition: 1s;
+    color: black;
+    background: rgba(66, 5, 66, 0.7);
+}
+
+
+ul li a{
+    /* Tirar linha de baixo da letra */
+    text-decoration: none;
+    color: white;
+} 
+/* Dropdwn não aparecer */
+.sub-menu-1{  
+    display: none;
+    margin-top: 21px;  
+}
+/* Dropdown */
+.subitem{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    /* Alinhar texto*/
+    text-align: left;
+    padding: 5px;
+    list-style: none; 
+}
+ /* Dropdown aparecer quando o mouse passar por cima */
+nav ul li:hover .sub-menu-1{  
+    display: block;
+    position: absolute;   
+}
+/* Magem interna das letras do Dropdown */
+.item{
+    padding: 10px;
+}
+
+/* Posicionar o footer fixo em baixo */
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;   
+    font-family: 'Times New Roman', Times, serif;
+    height: 50px;
+}

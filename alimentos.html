@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <title>Alimentos funcionais</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <!-- Inicio Home do navbar -->
+          <li class="menu">
+            <a href="./index.html">HOME</a>
+          </li>
+          <!-- Fim Home do navbar -->
+          <!-- Inicio Cursos do navbar -->
+          <li class="menu">
+            <a href="#">CURSOS <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                class="bi bi-caret-down-fill" viewBox="0 0 16 16"> <!-- seta para baixo -->
+                <path
+                  d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+              </svg> </a>
+              <!-- Dropdown -->
+            <div class="sub-menu-1">
+              <ul class="subitem">
+                <li class="item"> <a href="./design.html">Design Gráfico</a></li>
+                <li class="item"> <a href="./ds.html">desenvolvimento de sistemas</a></li>
+                <li class="item"> <a href="./alimentos.html">Alimentos funcionais</a></li>
+                <li class="item"> <a href="./instrumentacao.html">Instrumentação</a></li>
+              </ul>
+            </div>
+          </li>
+          <!-- Fim Cursos do navbar -->
+          <!-- Inicio Artistas do navbar -->
+          <li class="menu">
+            <a href="#">ARTISTAS <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-caret-down-fill" viewBox="0 0 16 16"> <!-- seta para baixo -->
+                <path
+                  d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+              </svg></a>
+              <!-- Dropdown -->
+            <div class="sub-menu-1">
+              <ul class="subitem">
+                <li class="item"> <a href="#">Adans Kauã</a></li>
+                <li class="item"> <a href="#">Andrey de Souza</a></li>
+                <li class="item"> <a href="#">Bryan Favarão</a></li>
+                <li class="item"> <a href="#">Eduardo Costa</a></li>
+              </ul>
+            </div>
+          </li>
+          <!-- fim artistas do navbar -->
+          <!-- Inicio Contato do navbar -->
+          <li class="menu">
+            <a href="./contato.html">CONTATO</a>
+          </li>
+          <!-- Fim Contato do navbar -->
+  
+        </ul>
+      </nav>
+    <div class="curso">
+        <h3>Informações do curso</h3>
+       <p>O curso de Aperfeiçoamento Profissional de Alimentos Funcionais tem por objetivo o <br>
+        desenvolvimento de capacidades relativas ao aperfeiçoamento de acadêmicos, docentes, <br>
+        pesquisadores, profissionais das indústrias da área de alimentos e o público no geral <br>
+        sobre alimentos funcionais, bem como sobre as substâncias bioativas contidas nestes <br> 
+        alimentos, visando sua aplicação na indústria de alimentos, de acordo com os seus requisitos <br> 
+        legais. Após o curso você sera capaz de Reconhecer os alimentos funcionais, reconhecer os <br> 
+        benefícios dos alimentos funcionais, identificar os aspectos do Mercado Nacional e <br> 
+        Internacional de Alimentos Funcionais, reconhecer os componentes bioativos dos alimentos <br> 
+        funcionais, reconhecer as normas e legislações sobre Alimentos Funcionais e identificar <br> 
+        as propriedades e efeitos fisiológicos dos alimentos funcionais; </p>
+
+        <p id="interesse">
+            Se interessou? Então preencha o formulário e particpe agora do curso de alimentos funcionais
+        </p>
+    </div>
+
+    <!--Inicio do form-->
+    <div class="content">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="057fa245-b008-4b2a-a0d7-796f36b66c03">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+            <fieldset>
+                <legend>Formulário para inscrição do curso</legend>
+                <div class="row">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="$nome" placeholder="Digite o seu nome" required><!--Pegar dados do nome-->
+                </div>
+                <div class="row">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="$sobrenome" placeholder="Digite o seu sobrenome" required><!--Pegar dados do sobrenome-->
+                </div>
+                <div class="row">
+                    <label for="data">Data de nascimento</label>
+                    <input type="date" id="data" name="$data" required><!--Pegar dados da data de nascimento-->
+                </div>
+                <div class="row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="$email" placeholder="Digite o seu Email" required><!--Pegar dados de email-->
+                </div>
+                <div class="row">
+                    <label for="">Sexo</label>
+                    <input type="radio" value="masculino" id="masculino" name="$sexo">
+                    <label for="masculino">Masculino</label>                                    <!--Pegar dados do sexo-->
+                    <input type="radio" value="feminino" id="feminino" name="$sexo">
+                    <label for="feminino">Feminino</label>
+                </div>
+                <div class="row">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="$cep" placeholder="Digite seu CEP" required><!-- Pegar os dados do cep e usar a API-->
+                </div>
+                <div class="row">
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" name="$logradouro" required><!--Pegar os dados de logradouro-->
+                </div>
+                <div class="row">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="$bairro" required><!--Pegar os dados do bairro-->
+                </div>
+                <div class="row">
+                    <label for="uf">UF</label>
+                    <input type="text" id="uf" name="$uf" required><!--Pegar os dados da uf-->
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Outras informações</legend>
+                <div class="row">
+                    <label for="nome">Fale suas expectativas para o curso</label>
+                </div>
+                <div class="row">
+                    <textarea name="$Expectativas" id="info" cols="30" rows="4"></textarea>
+                </div>        
+            </fieldset>
+            <div class="button">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+    <!--Fim do form-->
+
+   <!-- Começo do footer -->
+   <footer>
+    <p>Desenvolvido por © Os Eduardos</p>
+    </p>
+  </footer>
+  <!-- Fim do footer -->
+</body>
+<script src="./js/form.js" type="module" defer></script>
+</html>
